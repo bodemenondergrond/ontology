@@ -1,0 +1,211 @@
+@prefix concept: <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix access_right: <http://publications.europa.eu/resource/authority/access-right/>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix assettype: <http://purl.org/adms/assettype/>.
+@prefix conceptscheme: <https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/>.
+@prefix country: <http://publications.europa.eu/resource/authority/country/>.
+@prefix datasets: <https://datasets.omgeving.vlaanderen.be/>.
+@prefix datatheme_be: <http://vocab.belgif.be/auth/datatheme/>.
+@prefix datatheme_eu: <http://publications.europa.eu/resource/authority/data-theme/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix eurovoc: <http://eurovoc.europa.eu/>.
+@prefix file_type: <http://publications.europa.eu/resource/authority/file-type/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix formats: <http://www.w3.org/ns/formats/>.
+@prefix frequency: <http://publications.europa.eu/resource/authority/frequency/>.
+@prefix gemet: <http://www.eionet.europa.eu/gemet/concept/>.
+@prefix licence: <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/>.
+@prefix metadata: <https://data.omgeving.vlaanderen.be/ns/metadata#>.
+@prefix omg_catalog: <https://data.bodemenondergrond.vlaanderen.be/id/catalog/>.
+@prefix omg_catalog_doc: <https://data.bodemenondergrond.vlaanderen.be/doc/catalog/>.
+@prefix omg_collection: <https://data.bodemenondergrond.vlaanderen.be/id/collection/>.
+@prefix omg_dataservice: <https://data.bodemenondergrond.vlaanderen.be/id/dataservice/>.
+@prefix omg_dataset_doc: <https://data.bodemenondergrond.vlaanderen.be/doc/dataset/>.
+@prefix omg_dataset: <https://data.bodemenondergrond.vlaanderen.be/id/dataset/>.
+@prefix omg_distribution_doc: <https://data.bodemenondergrond.vlaanderen.be/doc/distribution/>.
+@prefix omg_distribution: <https://data.bodemenondergrond.vlaanderen.be/id/distribution/>.
+@prefix omg_graphcollection: <https://data.bodemenondergrond.vlaanderen.be/id/graphcollection/>.
+@prefix omg_graph: <https://data.bodemenondergrond.vlaanderen.be/id/graph/>.
+@prefix omg_id: <https://data.bodemenondergrond.vlaanderen.be/id/>.
+@prefix omg_named_graph: <https://data.bodemenondergrond.vlaanderen.be/id/namedgraph/>.
+@prefix omg_ontology: <https://data.bodemenondergrond.vlaanderen.be/id/ontology/>.
+@prefix omg_package: <https://data.bodemenondergrond.vlaanderen.be/id/package/>.
+@prefix omg_periodoftime: <https://data.bodemenondergrond.vlaanderen.be/id/periodoftime/>.
+@prefix omg_service: <https://data.bodemenondergrond.vlaanderen.be/id/service/>.
+@prefix omg_vcard: <https://data.bodemenondergrond.vlaanderen.be/id/vcard/>.
+@prefix ovo: <http://data.vlaanderen.be/id/organisatie/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix repo: <https://repo.omgeving.vlaanderen.be/artifactory/release/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix spdx: <http://spdx.org/rdf/terms#>.
+@prefix ssd: <http://www.w3.org/ns/sparql-service-description#>.
+@prefix ts: <http://www.w3.org/ns/formats/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix wise: <http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/>.
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
+@prefix Observation: <http://def.isotc211.org/iso19156/2011/Observation#>.
+@prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
+@prefix bodem-en-ondergrond: <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix ont: <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond>.
+
+bodem-en-ondergrond:BO_CurveWaardepaar a rdfs:Class;
+    rdfs:comment "Een Curvewaardepaar dat overeenstemt met een Profielelement."@nl;
+    rdfs:domain CoverageCore:CV_CurveValuePair;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "BO_CurveWaardepaar"@nl.
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_Curvewaardepaar.laag> a rdf:Property;
+    rdfs:comment "Overeenstemmend Profielelement."@nl;
+    rdfs:domain bodem-en-ondergrond:BO_CurveWaardepaar;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "laag"@nl;
+    rdfs:range bodem-en-ondergrond:Profielelement.
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.diepte> a rdf:Property;
+    rdfs:comment "Geeft aan tot welke Diepte het Bemonsteringsobject reikt."@nl;
+    rdfs:domain bodem-en-ondergrond:BO_RuimtelijkBemonsteringsobject;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "diepte"@nl;
+    rdfs:range <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure>.
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.ligging> a rdf:Property;
+    rdfs:comment "De ligging vh Bemonsteringsobject."@nl;
+    rdfs:domain bodem-en-ondergrond:BO_RuimtelijkBemonsteringsobject;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "ligging"@nl;
+    rdfs:range <http://www.w3.org/ns/prov#Location>.
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld> a rdf:Property;
+    rdfs:comment "Ligging van het grondoppervlak."@nl;
+    rdfs:domain bodem-en-ondergrond:BO_RuimtelijkBemonsteringsobject;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "maaiveld"@nl;
+    rdfs:range bodem-en-ondergrond:Maaiveld.
+bodem-en-ondergrond:BO_RuimtelijkBemonsteringsobject a rdfs:Class;
+    rdfs:comment "RuimtelijkBemonsteringsobject met bijkomende kenmerken relevant voor het domein Bodem en Ondergrond."@nl;
+    rdfs:domain <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature>;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "BO_RuimtelijkBemonsteringsobject"@nl.
+bodem-en-ondergrond:Boring a rdfs:Class;
+    rdfs:comment "Het aanbrengen van een gat in iets dmv een boor."@nl;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "Boring"@nl.
+bodem-en-ondergrond:Erkenning a rdfs:Class;
+    rdfs:comment "Officiële toelating toegekend aan een Persoon of Organisatie om een bepaald soort activiteiten uit te oefenen."@nl;
+    rdfs:domain <https://data.vlaanderen.be/ns/besluit#Besluit>;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "Erkenning"@nl.
+bodem-en-ondergrond:Fractiemeting a rdfs:Class;
+    rdfs:comment "Meetreeks waarbij het aandeel van iets varieert in functie van iets anders."@nl;
+    rdfs:domain Observation:OM_Observation, bodem-en-ondergrond:Meetreeks;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "Fractiemeting"@nl.
+bodem-en-ondergrond:Fractiemetingresultaat a rdfs:Class;
+    rdfs:comment "Resultaat van een Fractiemeting."@nl;
+    rdfs:domain bodem-en-ondergrond:Meetreeksresultaat;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "Fractiemetingresultaat"@nl.
+bodem-en-ondergrond:Fractiemetingwaarde a rdfs:Class;
+    rdfs:comment "Een Meetreekswaarde met een waarde voor de fractie en een waarde voor de parameter."@nl;
+    rdfs:domain bodem-en-ondergrond:Meetreekswaarde;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "Fractiemetingwaarde"@nl.
+bodem-en-ondergrond:Interpretatie a rdfs:Class;
+    rdfs:comment "Persoonlijk beredeneerd oordeel over de betekenis van iets."@nl;
+    rdfs:domain Observation:OM_Observation;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "Interpretatie"@nl.
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Laag.waarde> a rdf:Property;
+    rdfs:comment "Verwijzing naar een record dat de laal beschrijft."@nl;
+    rdfs:domain bodem-en-ondergrond:Laag;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "waarde"@nl;
+    rdfs:range rdfs:Resource.
+bodem-en-ondergrond:Laag a rdfs:Class;
+    rdfs:comment "Curve, bepaald door de uiteinden van de doorsnede van een Laagobject."@nl;
+    rdfs:domain <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Interval>;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "Laag"@nl.
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld.hoogte> a rdf:Property;
+    rdfs:comment "Verticale maat naar boven vanaf het grondoppervlak van het maaiveld."@nl;
+    rdfs:domain bodem-en-ondergrond:Maaiveld;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "hoogte"@nl;
+    rdfs:range <https://data.vlaanderen.be/ns/generiek#DirectePositie>.
+bodem-en-ondergrond:Maaiveld a rdfs:Class;
+    rdfs:comment "Het grondoppervlak, waarvan de hoogte vaak opgegeven wordt ten opzichte van een nationaal nul-niveau."@nl;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "Maaiveld"@nl.
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks.meetpuntparameter> a rdf:Property;
+    rdfs:comment "Het kenmerk in functie waarvan het geobserveerdKenmerk verandert."@nl;
+    rdfs:domain <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.parameter>, bodem-en-ondergrond:Meetreeks;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "meetpuntparameter"@nl;
+    rdfs:range <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType>.
+bodem-en-ondergrond:Meetreeks a rdfs:Class;
+    rdfs:comment "Observatie waarbij wordt nagegaan hoe een bepaald kenmerk verandert in functie van een ander kenmerk."@nl;
+    rdfs:domain Observation:OM_Observation;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "Meetreeks"@nl.
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeksresultaat.meetreekswaarde> a rdf:Property;
+    rdfs:comment "Eén waarde in het resultaat van een Meetreeks."@nl, "Waarde ve individuele Meting in de Meetreeks.."@nl;
+    rdfs:domain bodem-en-ondergrond:Fractiemetingresultaat, bodem-en-ondergrond:Meetreeksresultaat;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "fractiemetingwaarde"@nl, "meetreekswaarde"@nl;
+    rdfs:range bodem-en-ondergrond:Fractiemetingwaarde, bodem-en-ondergrond:Meetreekswaarde.
+bodem-en-ondergrond:Meetreeksresultaat a rdfs:Class;
+    rdfs:comment "Resultaat van een Meetreeksobservatie."@nl;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "Meetreeksresultaat"@nl.
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetpunt> a rdf:Property;
+    rdfs:comment "Waarde van het meetpunt."@nl;
+    rdfs:domain bodem-en-ondergrond:Meetreekswaarde;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "meetpunt"@nl;
+    rdfs:range rdfs:Resource.
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetpuntBovengrens> a rdf:Property;
+    rdfs:comment "Bovengrens van een klasse van waarden van meetpunten."@nl;
+    rdfs:domain bodem-en-ondergrond:Fractiemetingwaarde, <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetpunt>;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "meetpuntBovengrens"@nl;
+    rdfs:range <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure>.
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetpuntOndergrens> a rdf:Property;
+    rdfs:comment "Ondergrens van een klasse van waarden van meetpunten."@nl;
+    rdfs:domain bodem-en-ondergrond:Fractiemetingwaarde, <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetpunt>;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "meetpuntOndergrens"@nl;
+    rdfs:range <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure>.
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetwaarde> a rdf:Property;
+    rdfs:comment "Waarde van het geobserveerdKenmerk."@nl;
+    rdfs:domain bodem-en-ondergrond:Meetreekswaarde;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "meetwaarde"@nl;
+    rdfs:range rdfs:Resource.
+bodem-en-ondergrond:Meetreekswaarde a rdfs:Class;
+    rdfs:comment "Een waardepaar in een Meetreeks met een waarde voor de het geobserveerdKenmerk en een waarde voor de parameter."@nl;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "Meetreekswaarde"@nl.
+bodem-en-ondergrond:Opdracht a rdfs:Class;
+    rdfs:comment "Toegewezen taak."@nl;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "Opdracht"@nl.
+bodem-en-ondergrond:Profielelement a rdfs:Class;
+    rdfs:comment "Onderdeel vh Profiel."@nl;
+    rdfs:domain <http://def.isotc211.org/iso19156/2011/SamplingCurve#SF_SamplingCurve>, <http://def.isotc211.org/iso19156/2011/SpatialSamplingFeature#SF_SpatialSamplingFeature>;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "Profielelement"@nl.
+bodem-en-ondergrond:aanvangspeil a rdf:Property;
+    rdfs:comment "Geeft aan waar tov het Maaiveld het Bemonsteringsobject start."@nl;
+    rdfs:domain bodem-en-ondergrond:BO_RuimtelijkBemonsteringsobject;
+    rdfs:isDefinedBy ont:;
+    rdfs:label "aanvangspeil"@nl;
+    rdfs:range <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure>.
+ont: a owl:Ontology;
+    rdfs:label "bodem-en-ondergrond"@nl;
+    rdfs:seeAlso <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair.geometry>, <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_GeometryValuePair.value>, <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty>, <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result>, <http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingCurve.shape>, dct:type, skos:Concept.

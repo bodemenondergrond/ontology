@@ -1,0 +1,22 @@
+prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+prefix vann:  <http://purl.org/vocab/vann/>
+prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix beo: <https://data.vlaanderen.be/ns/bodem-en-ondergrond#>
+
+select ?uri ?a ?label ?seeAlso ?comment ?domain ?range ?subClassOf ?subPropertyOf ?isDefinedBy ?usagenote
+
+where
+
+{
+?uri a ?a .
+optional { ?uri  rdfs:label ?label} .
+optional { ?uri  rdfs:seeAlso ?seeAlso } .
+optional { ?uri  rdfs:comment ?comment } .
+optional { ?uri  rdfs:domain  ?domain } .
+optional { ?uri  rdfs:range   ?range } .
+optional { ?uri  rdfs:subClassOf ?subClassOf } .
+optional { ?uri  rdfs:subPropertyOf ?subPropertyOf} .
+optional { ?uri  rdfs:isDefinedBy  ?isDefinedBy } .
+optional { ?uri  vann:usageNote ?usageNote }.
+}
+
