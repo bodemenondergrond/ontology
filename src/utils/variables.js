@@ -15,19 +15,19 @@ const virtuoso = config.deploy.virtuoso ;
 
 const frame_skos_prefixes = {
     "@context": context_prefixes,
-    "@type": ["rdfs:Resource", "skos:ConceptScheme", "skos:Collection", "skos:Concept"],
-    "member": {
-        "@type": "skos:Concept",
+    "@type": ["owl:Ontology", "rdf:Property", "rdfs:Class", "rdfs:Resource", "skos:Concept"],
+    "isDefinedBy": {
+        "@type": "owl:Ontology",
         "@embed": "@never",
         "@omitDefault": true
     },
-    "inScheme": {
-        "@type": "skos:ConceptScheme",
+    "domain": {
+        "@type": "rdfs:Class",
         "@embed": "@never",
         "@omitDefault": true
     },
-    "topConceptOf": {
-        "@type": "skos:ConceptScheme",
+    "range": {
+        "@type": "rdfs:Class",
         "@embed": "@never",
         "@omitDefault": true
     },
@@ -35,62 +35,7 @@ const frame_skos_prefixes = {
         "@type": "skos:Concept",
         "@embed": "@never",
         "@omitDefault": true
-    },
-    "narrower": {
-        "@type": "skos:Concept",
-        "@embed": "@never",
-        "@omitDefault": true
-    },
-    "hasTopConcept": {
-        "@type": "skos:Concept",
-        "@embed": "@never",
-        "@omitDefault": true
-    },
-    "references":{
-        "@embed": "@never",
-            "@omitDefault": true
-    },
-    "isReferencedBy":{
-        "@embed": "@never",
-            "@omitDefault": true
-    },
-    "relation":{
-        "@embed": "@never",
-            "@omitDefault": true
-    },
-    "broaderTransitive" : {
-        "@embed": "@never",
-        "@omitDefault": true
-    },
-    "broadMatch" : {
-        "@embed": "@never",
-        "@omitDefault": true
-    },
-    "closeMatch" : {
-        "@embed": "@never",
-        "@omitDefault": true
-    },
-    "exactMatch" : {
-        "@embed": "@never",
-        "@omitDefault": true
-    },
-    "mappingRelation" : {
-        "@embed": "@never",
-        "@omitDefault": true
-    },
-    "narrowerTransitive" : {
-        "@embed": "@never",
-        "@omitDefault": true
-    },
-    "semanticRelation" : {
-        "@embed": "@never",
-        "@omitDefault": true
-    },
-    "narrowMatch" : {
-        "@embed": "@never",
-        "@omitDefault": true
-    },
-
+    }
 }
 
 

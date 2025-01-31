@@ -148,7 +148,9 @@ prefixes :
   Observation: http://def.isotc211.org/iso19156/2011/Observation#
   SamplingPoint: http://def.isotc211.org/iso19156/2011/SamplingPoint#
   bodem-en-ondergrond: https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#
-  ont: https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond
+  ns: https://data.bodemenondergrond.vlaanderen.be/ns/
+  ssn: http://www.w3.org/ns/ssn/
+  sosa: http://www.w3.org/ns/sosa/
 
 deploy:
   virtuoso: virtuoso-bodemenondergrond
