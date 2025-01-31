@@ -341,11 +341,11 @@
     "@type" : "@id"
   },
   "subPropertyOf" : {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
     "@type" : "@id"
   },
   "subClassOf" : {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
     "@type" : "@id"
   },
   "range" : {

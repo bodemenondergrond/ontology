@@ -35,7 +35,7 @@
             <configuration>
               <classifier>ontology</classifier>
               <includes>
-                <include>**/id/ontology/**</include>
+                <include>**/ns/bodem-en-ondergrond/**</include>
               </includes>
             </configuration>
           </execution>

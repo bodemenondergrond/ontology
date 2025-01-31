@@ -1,80 +1,47 @@
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_CurveWaardepaar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_CurveWaardepaar> <http://www.w3.org/2000/01/rdf-schema#comment> "Een Curvewaardepaar dat overeenstemt met een Profielelement."@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_CurveWaardepaar> <http://www.w3.org/2000/01/rdf-schema#domain> <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_CurveWaardepaar> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_CurveWaardepaar> <http://www.w3.org/2000/01/rdf-schema#label> "BO_CurveWaardepaar"@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_Curvewaardepaar.laag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_Curvewaardepaar.laag> <http://www.w3.org/2000/01/rdf-schema#comment> "Overeenstemmend Profielelement."@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_Curvewaardepaar.laag> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_CurveWaardepaar> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_Curvewaardepaar.laag> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_Curvewaardepaar.laag> <http://www.w3.org/2000/01/rdf-schema#label> "laag"@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_Curvewaardepaar.laag> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Profielelement> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld> <http://www.w3.org/2000/01/rdf-schema#comment> "Ligging van het grondoppervlak."@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld> <http://www.w3.org/2000/01/rdf-schema#label> "maaiveld"@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_CurveWaardepaar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://def.isotc211.org/iso19123/2005/CoverageCore#CV_CurveValuePair> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject> <http://www.w3.org/2000/01/rdf-schema#comment> "RuimtelijkBemonsteringsobject met bijkomende kenmerken relevant voor het domein Bodem en Ondergrond."@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject> <http://www.w3.org/2000/01/rdf-schema#label> "BO_RuimtelijkBemonsteringsobject"@nl .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Boring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Boring> <http://www.w3.org/2000/01/rdf-schema#comment> "Het aanbrengen van een gat in iets dmv een boor."@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Boring> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Boring> <http://www.w3.org/2000/01/rdf-schema#label> "Boring"@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Erkenning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Erkenning> <http://www.w3.org/2000/01/rdf-schema#comment> "Officiële toelating toegekend aan een Persoon of Organisatie om een bepaald soort activiteiten uit te oefenen."@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Erkenning> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/besluit#Besluit> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Erkenning> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Erkenning> <http://www.w3.org/2000/01/rdf-schema#label> "Erkenning"@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemeting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemeting> <http://www.w3.org/2000/01/rdf-schema#comment> "Meetreeks waarbij het aandeel van iets varieert in functie van iets anders."@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemeting> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Observation> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemeting> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemeting> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemeting> <http://www.w3.org/2000/01/rdf-schema#label> "Fractiemeting"@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingresultaat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingresultaat> <http://www.w3.org/2000/01/rdf-schema#comment> "Resultaat van een Fractiemeting."@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingresultaat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeksresultaat> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingresultaat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingresultaat> <http://www.w3.org/2000/01/rdf-schema#label> "Fractiemetingresultaat"@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingwaarde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingwaarde> <http://www.w3.org/2000/01/rdf-schema#comment> "Een Meetreekswaarde met een waarde voor de fractie en een waarde voor de parameter."@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingwaarde> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingwaarde> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingwaarde> <http://www.w3.org/2000/01/rdf-schema#label> "Fractiemetingwaarde"@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Interpretatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Interpretatie> <http://www.w3.org/2000/01/rdf-schema#comment> "Persoonlijk beredeneerd oordeel over de betekenis van iets."@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Interpretatie> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Observation> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Interpretatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Interpretatie> <http://www.w3.org/2000/01/rdf-schema#label> "Interpretatie"@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Laag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Laag> <http://www.w3.org/2000/01/rdf-schema#comment> "Curve, bepaald door de uiteinden van de doorsnede van een Laagobject."@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Laag> <http://www.w3.org/2000/01/rdf-schema#domain> <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Interval> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Laag> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Laag> <http://www.w3.org/2000/01/rdf-schema#label> "Laag"@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld.hoogte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld.hoogte> <http://www.w3.org/2000/01/rdf-schema#comment> "Verticale maat naar boven vanaf het grondoppervlak van het maaiveld."@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld.hoogte> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld.hoogte> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld.hoogte> <http://www.w3.org/2000/01/rdf-schema#label> "hoogte"@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld.hoogte> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/generiek#DirectePositie> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld> <http://www.w3.org/2000/01/rdf-schema#comment> "Het grondoppervlak, waarvan de hoogte vaak opgegeven wordt ten opzichte van een nationaal nul-niveau."@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld> <http://www.w3.org/2000/01/rdf-schema#label> "Maaiveld"@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks.meetpuntparameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks.meetpuntparameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Het kenmerk in functie waarvan het geobserveerdKenmerk verandert."@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks.meetpuntparameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Observation.parameter> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks.meetpuntparameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks.meetpuntparameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks.meetpuntparameter> <http://www.w3.org/2000/01/rdf-schema#label> "meetpuntparameter"@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks.meetpuntparameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks> <http://www.w3.org/2000/01/rdf-schema#comment> "Observatie waarbij wordt nagegaan hoe een bepaald kenmerk verandert in functie van een ander kenmerk."@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Observation> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks> <http://www.w3.org/2000/01/rdf-schema#label> "Meetreeks"@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeksresultaat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
@@ -91,7 +58,6 @@
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Opdracht> <http://www.w3.org/2000/01/rdf-schema#label> "Opdracht"@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Profielelement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Profielelement> <http://www.w3.org/2000/01/rdf-schema#comment> "Onderdeel vh Profiel."@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Profielelement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Profielelement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Profielelement> <http://www.w3.org/2000/01/rdf-schema#label> "Profielelement"@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#aanvangspeil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
@@ -106,12 +72,30 @@
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#diepte> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#diepte> <http://www.w3.org/2000/01/rdf-schema#label> "diepte"@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#diepte> <http://www.w3.org/2000/01/rdf-schema#range> <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#hoogte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#hoogte> <http://www.w3.org/2000/01/rdf-schema#comment> "Verticale maat naar boven vanaf het grondoppervlak van het maaiveld."@nl .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#hoogte> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#hoogte> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#hoogte> <http://www.w3.org/2000/01/rdf-schema#label> "hoogte"@nl .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#hoogte> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/generiek#DirectePositie> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#laag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#laag> <http://www.w3.org/2000/01/rdf-schema#comment> "Overeenstemmend Profielelement."@nl .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#laag> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_CurveWaardepaar> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#laag> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#laag> <http://www.w3.org/2000/01/rdf-schema#label> "laag"@nl .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#laag> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Profielelement> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#ligging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#ligging> <http://www.w3.org/2000/01/rdf-schema#comment> "De ligging vh Bemonsteringsobject."@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#ligging> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#ligging> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#ligging> <http://www.w3.org/2000/01/rdf-schema#label> "ligging"@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#ligging> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Location> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#maaiveld> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#maaiveld> <http://www.w3.org/2000/01/rdf-schema#comment> "Ligging van het grondoppervlak."@nl .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#maaiveld> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#maaiveld> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#maaiveld> <http://www.w3.org/2000/01/rdf-schema#label> "maaiveld"@nl .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#maaiveld> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpunt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpunt> <http://www.w3.org/2000/01/rdf-schema#comment> "Waarde van het meetpunt."@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpunt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde> .
@@ -121,25 +105,30 @@
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntBovengrens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntBovengrens> <http://www.w3.org/2000/01/rdf-schema#comment> "Bovengrens van een klasse van waarden van meetpunten."@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntBovengrens> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingwaarde> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntBovengrens> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetpunt> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntBovengrens> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntBovengrens> <http://www.w3.org/2000/01/rdf-schema#label> "meetpuntBovengrens"@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntBovengrens> <http://www.w3.org/2000/01/rdf-schema#range> <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntBovengrens> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpunt> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntOndergrens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntOndergrens> <http://www.w3.org/2000/01/rdf-schema#comment> "Ondergrens van een klasse van waarden van meetpunten."@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntOndergrens> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingwaarde> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntOndergrens> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetpunt> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntOndergrens> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntOndergrens> <http://www.w3.org/2000/01/rdf-schema#label> "meetpuntOndergrens"@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntOndergrens> <http://www.w3.org/2000/01/rdf-schema#range> <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntOndergrens> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpunt> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntparameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntparameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Het kenmerk in functie waarvan het geobserveerdKenmerk verandert."@nl .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntparameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntparameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntparameter> <http://www.w3.org/2000/01/rdf-schema#label> "meetpuntparameter"@nl .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetpuntparameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetreekswaarde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetreekswaarde> <http://www.w3.org/2000/01/rdf-schema#comment> "Eén waarde in het resultaat van een Meetreeks."@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetreekswaarde> <http://www.w3.org/2000/01/rdf-schema#comment> "Waarde van een individuele meting in de Meetreeks.."@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetreekswaarde> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingresultaat> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetreekswaarde> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeksresultaat> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetreekswaarde> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond> .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetreekswaarde> <http://www.w3.org/2000/01/rdf-schema#label> "fractiemetingwaarde"@nl .
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetreekswaarde> <http://www.w3.org/2000/01/rdf-schema#label> "meetreekswaarde"@nl .
+<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetreekswaarde> <http://www.w3.org/2000/01/rdf-schema#label> "Meetreekswaarde"@nl .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetreekswaarde> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Fractiemetingwaarde> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetwaarde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#meetwaarde> <http://www.w3.org/2000/01/rdf-schema#comment> "Waarde van het geobserveerdKenmerk."@nl .

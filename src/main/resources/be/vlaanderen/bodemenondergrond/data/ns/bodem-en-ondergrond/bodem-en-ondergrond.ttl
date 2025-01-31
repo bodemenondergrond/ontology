@@ -62,79 +62,48 @@
 
 bodem-en-ondergrond:BO_CurveWaardepaar a rdfs:Class;
     rdfs:comment "Een Curvewaardepaar dat overeenstemt met een Profielelement."@nl;
-    rdfs:domain CoverageCore:CV_CurveValuePair;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
-    rdfs:label "BO_CurveWaardepaar"@nl.
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_Curvewaardepaar.laag> a rdf:Property;
-    rdfs:comment "Overeenstemmend Profielelement."@nl;
-    rdfs:domain bodem-en-ondergrond:BO_CurveWaardepaar;
-    rdfs:isDefinedBy ns:bodem-en-ondergrond;
-    rdfs:label "laag"@nl;
-    rdfs:range bodem-en-ondergrond:Profielelement.
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#BO_RuimtelijkBemonsteringsobject.maaiveld> a rdf:Property;
-    rdfs:comment "Ligging van het grondoppervlak."@nl;
-    rdfs:domain bodem-en-ondergrond:BO_RuimtelijkBemonsteringsobject;
-    rdfs:isDefinedBy ns:bodem-en-ondergrond;
-    rdfs:label "maaiveld"@nl;
-    rdfs:range bodem-en-ondergrond:Maaiveld.
+    rdfs:label "BO_CurveWaardepaar"@nl;
+    rdfs:subClassOf CoverageCore:CV_CurveValuePair.
 bodem-en-ondergrond:BO_RuimtelijkBemonsteringsobject a rdfs:Class;
     rdfs:comment "RuimtelijkBemonsteringsobject met bijkomende kenmerken relevant voor het domein Bodem en Ondergrond."@nl;
-    rdfs:domain sosa:FeatureOfInterest;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
-    rdfs:label "BO_RuimtelijkBemonsteringsobject"@nl.
+    rdfs:label "BO_RuimtelijkBemonsteringsobject"@nl;
+    rdfs:subClassOf sosa:FeatureOfInterest.
 bodem-en-ondergrond:Boring a rdfs:Class;
     rdfs:comment "Het aanbrengen van een gat in iets dmv een boor."@nl;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
     rdfs:label "Boring"@nl.
 bodem-en-ondergrond:Erkenning a rdfs:Class;
     rdfs:comment "Officiële toelating toegekend aan een Persoon of Organisatie om een bepaald soort activiteiten uit te oefenen."@nl;
-    rdfs:domain <https://data.vlaanderen.be/ns/besluit#Besluit>;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
     rdfs:label "Erkenning"@nl.
 bodem-en-ondergrond:Fractiemeting a rdfs:Class;
     rdfs:comment "Meetreeks waarbij het aandeel van iets varieert in functie van iets anders."@nl;
-    rdfs:domain sosa:Observation, bodem-en-ondergrond:Meetreeks;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
     rdfs:label "Fractiemeting"@nl.
 bodem-en-ondergrond:Fractiemetingresultaat a rdfs:Class;
     rdfs:comment "Resultaat van een Fractiemeting."@nl;
-    rdfs:domain bodem-en-ondergrond:Meetreeksresultaat;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
     rdfs:label "Fractiemetingresultaat"@nl.
 bodem-en-ondergrond:Fractiemetingwaarde a rdfs:Class;
     rdfs:comment "Een Meetreekswaarde met een waarde voor de fractie en een waarde voor de parameter."@nl;
-    rdfs:domain bodem-en-ondergrond:Meetreekswaarde;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
     rdfs:label "Fractiemetingwaarde"@nl.
 bodem-en-ondergrond:Interpretatie a rdfs:Class;
     rdfs:comment "Persoonlijk beredeneerd oordeel over de betekenis van iets."@nl;
-    rdfs:domain sosa:Observation;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
     rdfs:label "Interpretatie"@nl.
 bodem-en-ondergrond:Laag a rdfs:Class;
     rdfs:comment "Curve, bepaald door de uiteinden van de doorsnede van een Laagobject."@nl;
-    rdfs:domain <http://def.isotc211.org/iso19156/2011/DomainSpecificSamplingFeatures#Interval>;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
     rdfs:label "Laag"@nl.
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Maaiveld.hoogte> a rdf:Property;
-    rdfs:comment "Verticale maat naar boven vanaf het grondoppervlak van het maaiveld."@nl;
-    rdfs:domain bodem-en-ondergrond:Maaiveld;
-    rdfs:isDefinedBy ns:bodem-en-ondergrond;
-    rdfs:label "hoogte"@nl;
-    rdfs:range <https://data.vlaanderen.be/ns/generiek#DirectePositie>.
 bodem-en-ondergrond:Maaiveld a rdfs:Class;
     rdfs:comment "Het grondoppervlak, waarvan de hoogte vaak opgegeven wordt ten opzichte van een nationaal nul-niveau."@nl;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
     rdfs:label "Maaiveld"@nl.
-<https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreeks.meetpuntparameter> a rdf:Property;
-    rdfs:comment "Het kenmerk in functie waarvan het geobserveerdKenmerk verandert."@nl;
-    rdfs:domain <http://www.w3.org/ns/sosa/Observation.parameter>, bodem-en-ondergrond:Meetreeks;
-    rdfs:isDefinedBy ns:bodem-en-ondergrond;
-    rdfs:label "meetpuntparameter"@nl;
-    rdfs:range <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType>.
 bodem-en-ondergrond:Meetreeks a rdfs:Class;
     rdfs:comment "Observatie waarbij wordt nagegaan hoe een bepaald kenmerk verandert in functie van een ander kenmerk."@nl;
-    rdfs:domain sosa:Observation;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
     rdfs:label "Meetreeks"@nl.
 bodem-en-ondergrond:Meetreeksresultaat a rdfs:Class;
@@ -151,7 +120,6 @@ bodem-en-ondergrond:Opdracht a rdfs:Class;
     rdfs:label "Opdracht"@nl.
 bodem-en-ondergrond:Profielelement a rdfs:Class;
     rdfs:comment "Onderdeel vh Profiel."@nl;
-    rdfs:domain sosa:FeatureOfInterest;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
     rdfs:label "Profielelement"@nl.
 bodem-en-ondergrond:aanvangspeil a rdf:Property;
@@ -166,12 +134,30 @@ bodem-en-ondergrond:diepte a rdf:Property;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
     rdfs:label "diepte"@nl;
     rdfs:range <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure>.
+bodem-en-ondergrond:hoogte a rdf:Property;
+    rdfs:comment "Verticale maat naar boven vanaf het grondoppervlak van het maaiveld."@nl;
+    rdfs:domain bodem-en-ondergrond:Maaiveld;
+    rdfs:isDefinedBy ns:bodem-en-ondergrond;
+    rdfs:label "hoogte"@nl;
+    rdfs:range <https://data.vlaanderen.be/ns/generiek#DirectePositie>.
+bodem-en-ondergrond:laag a rdf:Property;
+    rdfs:comment "Overeenstemmend Profielelement."@nl;
+    rdfs:domain bodem-en-ondergrond:BO_CurveWaardepaar;
+    rdfs:isDefinedBy ns:bodem-en-ondergrond;
+    rdfs:label "laag"@nl;
+    rdfs:range bodem-en-ondergrond:Profielelement.
 bodem-en-ondergrond:ligging a rdf:Property;
     rdfs:comment "De ligging vh Bemonsteringsobject."@nl;
     rdfs:domain bodem-en-ondergrond:BO_RuimtelijkBemonsteringsobject;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
     rdfs:label "ligging"@nl;
     rdfs:range <http://www.w3.org/ns/prov#Location>.
+bodem-en-ondergrond:maaiveld a rdf:Property;
+    rdfs:comment "Ligging van het grondoppervlak."@nl;
+    rdfs:domain bodem-en-ondergrond:BO_RuimtelijkBemonsteringsobject;
+    rdfs:isDefinedBy ns:bodem-en-ondergrond;
+    rdfs:label "maaiveld"@nl;
+    rdfs:range bodem-en-ondergrond:Maaiveld.
 bodem-en-ondergrond:meetpunt a rdf:Property;
     rdfs:comment "Waarde van het meetpunt."@nl;
     rdfs:domain bodem-en-ondergrond:Meetreekswaarde;
@@ -180,21 +166,29 @@ bodem-en-ondergrond:meetpunt a rdf:Property;
     rdfs:range rdfs:Resource.
 bodem-en-ondergrond:meetpuntBovengrens a rdf:Property;
     rdfs:comment "Bovengrens van een klasse van waarden van meetpunten."@nl;
-    rdfs:domain bodem-en-ondergrond:Fractiemetingwaarde, <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetpunt>;
+    rdfs:domain bodem-en-ondergrond:Fractiemetingwaarde;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
     rdfs:label "meetpuntBovengrens"@nl;
-    rdfs:range <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure>.
+    rdfs:range <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure>;
+    rdfs:subPropertyOf bodem-en-ondergrond:meetpunt.
 bodem-en-ondergrond:meetpuntOndergrens a rdf:Property;
     rdfs:comment "Ondergrens van een klasse van waarden van meetpunten."@nl;
-    rdfs:domain bodem-en-ondergrond:Fractiemetingwaarde, <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#Meetreekswaarde.meetpunt>;
+    rdfs:domain bodem-en-ondergrond:Fractiemetingwaarde;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
     rdfs:label "meetpuntOndergrens"@nl;
-    rdfs:range <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure>.
+    rdfs:range <http://def.isotc211.org/iso19103/2005/UnitsOfMeasure#Measure>;
+    rdfs:subPropertyOf bodem-en-ondergrond:meetpunt.
+bodem-en-ondergrond:meetpuntparameter a rdf:Property;
+    rdfs:comment "Het kenmerk in functie waarvan het geobserveerdKenmerk verandert."@nl;
+    rdfs:domain bodem-en-ondergrond:Meetreeks;
+    rdfs:isDefinedBy ns:bodem-en-ondergrond;
+    rdfs:label "meetpuntparameter"@nl;
+    rdfs:range <http://def.isotc211.org/iso19109/2005/GeneralFeatureModel#GF_PropertyType>.
 bodem-en-ondergrond:meetreekswaarde a rdf:Property;
     rdfs:comment "Eén waarde in het resultaat van een Meetreeks."@nl, "Waarde van een individuele meting in de Meetreeks.."@nl;
     rdfs:domain bodem-en-ondergrond:Fractiemetingresultaat, bodem-en-ondergrond:Meetreeksresultaat;
     rdfs:isDefinedBy ns:bodem-en-ondergrond;
-    rdfs:label "fractiemetingwaarde"@nl, "meetreekswaarde"@nl;
+    rdfs:label "Meetreekswaarde"@nl;
     rdfs:range bodem-en-ondergrond:Fractiemetingwaarde.
 bodem-en-ondergrond:meetwaarde a rdf:Property;
     rdfs:comment "Waarde van het geobserveerdKenmerk."@nl;

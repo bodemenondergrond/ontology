@@ -21,14 +21,14 @@ Voorbeeld: Voeg een definitie van een nieuwe code in de ontologie toe.
 
 ### Genereer de verspreidingsvormen van de ontologie
 
-#### csv-source naar rdf, jsonld, csv, xsd, excel
+#### csv-source naar rdf, jsonld, csv
 
 ```
 cd $PROJECT_HOME/src/
-node 01_ontologie_skos_from_csv.js
+node 01_ontologie_from_csv.js
 ```
 
-Dit script gaat het bron CSV bestand omzetten naar een rdfs ontologie in verschillende RDF formaten, een CSV bestand, een excel en een xsd enum.
+Dit script gaat het bron CSV bestand omzetten naar een rdfs ontologie in verschillende RDF formaten en een CSV bestand.
 Het JSONLD context bestand van de ontologie (src/source/context.json) en de yaml (src/source/config.yml) bevatten de mapping van CSV naar RDF.
 
 ### Voorbereiding release
