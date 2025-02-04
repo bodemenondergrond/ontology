@@ -1,4 +1,4 @@
-# ontologie-boormethode
+# ontologie bodem en ondergrond
 
 ## Samenvatting
 
