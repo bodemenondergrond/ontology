@@ -9,7 +9,7 @@
 
   <groupId>be.vlaanderen.bodemenondergrond.data.id.graph</groupId> <!-- e.g. be.vlaanderen.bodemenondergrond.data.id.graph -->
   <artifactId>ontology</artifactId> <!-- e.g. codelijst-testrepo -->
-  <version>0.1.1-SNAPSHOT</version>
+  <version>0.1.2-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>ontology</name>
 
