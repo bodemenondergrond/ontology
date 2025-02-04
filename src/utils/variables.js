@@ -41,6 +41,11 @@ const frame_skos_no_prefixes = {
         "@embed": "@never",
         "@omitDefault": true
     },
+    "sameAs": {
+        "@type": "http://www.w3.org/2002/07/owl#Ontology",
+        "@embed": "@never",
+        "@omitDefault": true
+    },
     "domain": {
         "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
         "@embed": "@never",

@@ -6,7 +6,7 @@ skos:
   prefixes :
     concept : https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#
   path: ./main/resources/be/vlaanderen/bodemenondergrond/data/ns/
-  name: bodem-en-ondergrond
+  name: bodemenondergrond
   turtle: .ttl
   jsonld: .jsonld
   nt: .nt
@@ -152,7 +152,8 @@ prefixes :
   CoverageCore: http://def.isotc211.org/iso19123/2005/CoverageCore#
   Observation: http://def.isotc211.org/iso19156/2011/Observation#
   SamplingPoint: http://def.isotc211.org/iso19156/2011/SamplingPoint#
-  bodem-en-ondergrond: https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#
+  bodemenondergrond: https://data.bodemenondergrond.vlaanderen.be/ns/bodemenondergrond#
+  ontology: https://data.bodemenondergrond.vlaanderen.be/id/ontology/
   ns: https://data.bodemenondergrond.vlaanderen.be/ns/
   ssn: http://www.w3.org/ns/ssn/
   sosa: http://www.w3.org/ns/sosa/

@@ -356,7 +356,11 @@
             "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
             "@type": "@id"
         },
-        "concept": "https://data.bodemenondergrond.vlaanderen.be/ns/bodemenondergrond#",
+        "sameAs": {
+            "@id": "http://www.w3.org/2002/07/owl#sameAs",
+            "@type": "@id"
+        },
+        "concept": "https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#",
         "access_right": "http://publications.europa.eu/resource/authority/access-right/",
         "adms": "http://www.w3.org/ns/adms#",
         "assettype": "http://purl.org/adms/assettype/",
@@ -413,17 +417,18 @@
         "CoverageCore": "http://def.isotc211.org/iso19123/2005/CoverageCore#",
         "Observation": "http://def.isotc211.org/iso19156/2011/Observation#",
         "SamplingPoint": "http://def.isotc211.org/iso19156/2011/SamplingPoint#",
-        "bodem-en-ondergrond": "https://data.bodemenondergrond.vlaanderen.be/ns/bodemenondergrond#",
+        "bodemenondergrond": "https://data.bodemenondergrond.vlaanderen.be/ns/bodemenondergrond#",
+        "ontology": "https://data.bodemenondergrond.vlaanderen.be/id/ontology/",
         "ns": "https://data.bodemenondergrond.vlaanderen.be/ns/",
         "ssn": "http://www.w3.org/ns/ssn/",
         "sosa": "http://www.w3.org/ns/sosa/",
-        "@base": "https://data.bodemenondergrond.vlaanderen.be/ns/bodemenondergrond#"
+        "@base": "https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#"
     },
     "graph": [
         {
-            "id": "ns:bodem-en-ondergrond",
+            "id": "ontology:bodemenondergrond",
             "type": "owl:Ontology",
-            "label": "bodem-en-ondergrond",
+            "label": "bodemenondergrond",
             "seeAlso": [
                 "CoverageCore:CV_CurveValuePair.geometry",
                 "CoverageCore:CV_GeometryValuePair.value",
@@ -433,192 +438,219 @@
                 "sosa:Observation",
                 "sosa:observedProperty",
                 "sosa:result"
-            ]
+            ],
+            "sameAs": {
+                "id": "ns:bodemenondergrond",
+                "type": "owl:Ontology",
+                "label": "bodemenondergrond",
+                "sameAs": "ontology:bodemenondergrond"
+            }
         },
         {
-            "id": "concept:BO_CurveWaardepaar",
+            "id": "ns:bodemenondergrond",
+            "type": "owl:Ontology",
+            "label": "bodemenondergrond",
+            "sameAs": {
+                "id": "ontology:bodemenondergrond",
+                "type": "owl:Ontology",
+                "label": "bodemenondergrond",
+                "seeAlso": [
+                    "CoverageCore:CV_CurveValuePair.geometry",
+                    "CoverageCore:CV_GeometryValuePair.value",
+                    "SamplingPoint:SF_SamplingCurve.shape",
+                    "dct:type",
+                    "skos:Concept",
+                    "sosa:Observation",
+                    "sosa:observedProperty",
+                    "sosa:result"
+                ],
+                "sameAs": "ns:bodemenondergrond"
+            }
+        },
+        {
+            "id": "bodemenondergrond:BO_CurveWaardepaar",
             "type": "rdfs:Class",
             "comment": "Een Curvewaardepaar dat overeenstemt met een Profielelement.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "BO_CurveWaardepaar",
             "subClassOf": "CoverageCore:CV_CurveValuePair"
         },
         {
-            "id": "concept:BO_RuimtelijkBemonsteringsobject",
+            "id": "bodemenondergrond:BO_RuimtelijkBemonsteringsobject",
             "type": "rdfs:Class",
             "comment": "RuimtelijkBemonsteringsobject met bijkomende kenmerken relevant voor het domein Bodem en Ondergrond.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "BO_RuimtelijkBemonsteringsobject",
             "subClassOf": "sosa:FeatureOfInterest"
         },
         {
-            "id": "concept:Boring",
+            "id": "bodemenondergrond:Boring",
             "type": "rdfs:Class",
             "comment": "Het aanbrengen van een gat in iets dmv een boor.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "Boring"
         },
         {
-            "id": "concept:Erkenning",
+            "id": "bodemenondergrond:Erkenning",
             "type": "rdfs:Class",
             "comment": "Officiële toelating toegekend aan een Persoon of Organisatie om een bepaald soort activiteiten uit te oefenen.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "Erkenning"
         },
         {
-            "id": "concept:Fractiemeting",
+            "id": "bodemenondergrond:Fractiemeting",
             "type": "rdfs:Class",
             "comment": "Meetreeks waarbij het aandeel van iets varieert in functie van iets anders.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "Fractiemeting"
         },
         {
-            "id": "concept:Fractiemetingresultaat",
+            "id": "bodemenondergrond:Fractiemetingresultaat",
             "type": "rdfs:Class",
             "comment": "Resultaat van een Fractiemeting.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "Fractiemetingresultaat"
         },
         {
-            "id": "concept:Fractiemetingwaarde",
+            "id": "bodemenondergrond:Fractiemetingwaarde",
             "type": "rdfs:Class",
             "comment": "Een Meetreekswaarde met een waarde voor de fractie en een waarde voor de parameter.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "Fractiemetingwaarde"
         },
         {
-            "id": "concept:Interpretatie",
+            "id": "bodemenondergrond:Interpretatie",
             "type": "rdfs:Class",
             "comment": "Persoonlijk beredeneerd oordeel over de betekenis van iets.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "Interpretatie"
         },
         {
-            "id": "concept:Laag",
+            "id": "bodemenondergrond:Laag",
             "type": "rdfs:Class",
             "comment": "Curve, bepaald door de uiteinden van de doorsnede van een Laagobject.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "Laag"
         },
         {
-            "id": "concept:Maaiveld",
+            "id": "bodemenondergrond:Maaiveld",
             "type": "rdfs:Class",
             "comment": "Het grondoppervlak, waarvan de hoogte vaak opgegeven wordt ten opzichte van een nationaal nul-niveau.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "Maaiveld"
         },
         {
-            "id": "concept:Meetreeks",
+            "id": "bodemenondergrond:Meetreeks",
             "type": "rdfs:Class",
             "comment": "Observatie waarbij wordt nagegaan hoe een bepaald kenmerk verandert in functie van een ander kenmerk.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "Meetreeks"
         },
         {
-            "id": "concept:Meetreeksresultaat",
+            "id": "bodemenondergrond:Meetreeksresultaat",
             "type": "rdfs:Class",
             "comment": "Resultaat van een Meetreeksobservatie.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "Meetreeksresultaat"
         },
         {
-            "id": "concept:Meetreekswaarde",
+            "id": "bodemenondergrond:Meetreekswaarde",
             "type": "rdfs:Class",
             "comment": "Een waardepaar in een Meetreeks met een waarde voor de het geobserveerdKenmerk en een waarde voor de parameter.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "Meetreekswaarde"
         },
         {
-            "id": "concept:Opdracht",
+            "id": "bodemenondergrond:Opdracht",
             "type": "rdfs:Class",
             "comment": "Toegewezen taak.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "Opdracht"
         },
         {
-            "id": "concept:Profielelement",
+            "id": "bodemenondergrond:Profielelement",
             "type": "rdfs:Class",
             "comment": "Onderdeel vh Profiel.",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "Profielelement"
         },
         {
-            "id": "concept:aanvangspeil",
+            "id": "bodemenondergrond:aanvangspeil",
             "type": "rdf:Property",
             "comment": "Geeft aan waar tov het Maaiveld het Bemonsteringsobject start.",
-            "domain": "concept:BO_RuimtelijkBemonsteringsobject",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "domain": "bodemenondergrond:BO_RuimtelijkBemonsteringsobject",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "aanvangspeil"
         },
         {
-            "id": "concept:diepte",
+            "id": "bodemenondergrond:diepte",
             "type": "rdf:Property",
             "comment": "Geeft aan tot welke Diepte het Bemonsteringsobject reikt.",
-            "domain": "concept:BO_RuimtelijkBemonsteringsobject",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "domain": "bodemenondergrond:BO_RuimtelijkBemonsteringsobject",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "diepte"
         },
         {
-            "id": "concept:hoogte",
+            "id": "bodemenondergrond:hoogte",
             "type": "rdf:Property",
             "comment": "Verticale maat naar boven vanaf het grondoppervlak van het maaiveld.",
-            "domain": "concept:Maaiveld",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "domain": "bodemenondergrond:Maaiveld",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "hoogte"
         },
         {
-            "id": "concept:laag",
+            "id": "bodemenondergrond:laag",
             "type": "rdf:Property",
             "comment": "Overeenstemmend Profielelement.",
-            "domain": "concept:BO_CurveWaardepaar",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "domain": "bodemenondergrond:BO_CurveWaardepaar",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "laag",
-            "range": "concept:Profielelement"
+            "range": "bodemenondergrond:Profielelement"
         },
         {
-            "id": "concept:ligging",
+            "id": "bodemenondergrond:ligging",
             "type": "rdf:Property",
             "comment": "De ligging vh Bemonsteringsobject.",
-            "domain": "concept:BO_RuimtelijkBemonsteringsobject",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "domain": "bodemenondergrond:BO_RuimtelijkBemonsteringsobject",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "ligging"
         },
         {
-            "id": "concept:maaiveld",
+            "id": "bodemenondergrond:maaiveld",
             "type": "rdf:Property",
             "comment": "Ligging van het grondoppervlak.",
-            "domain": "concept:BO_RuimtelijkBemonsteringsobject",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "domain": "bodemenondergrond:BO_RuimtelijkBemonsteringsobject",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "maaiveld",
-            "range": "concept:Maaiveld"
+            "range": "bodemenondergrond:Maaiveld"
         },
         {
-            "id": "concept:meetpunt",
+            "id": "bodemenondergrond:meetpunt",
             "type": "rdf:Property",
             "comment": "Waarde van het meetpunt.",
-            "domain": "concept:Meetreekswaarde",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "domain": "bodemenondergrond:Meetreekswaarde",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "meetpunt"
         },
         {
-            "id": "concept:meetpuntBovengrens",
+            "id": "bodemenondergrond:meetpuntBovengrens",
             "type": "rdf:Property",
             "comment": "Bovengrens van een klasse van waarden van meetpunten.",
-            "domain": "concept:Fractiemetingwaarde",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "domain": "bodemenondergrond:Fractiemetingwaarde",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "meetpuntBovengrens",
             "subPropertyOf": {
-                "id": "concept:meetpunt",
+                "id": "bodemenondergrond:meetpunt",
                 "type": "rdf:Property",
                 "comment": "Waarde van het meetpunt.",
                 "domain": {
-                    "id": "concept:Meetreekswaarde",
+                    "id": "bodemenondergrond:Meetreekswaarde",
                     "type": "rdfs:Class",
                     "comment": "Een waardepaar in een Meetreeks met een waarde voor de het geobserveerdKenmerk en een waarde voor de parameter.",
                     "isDefinedBy": {
-                        "id": "ns:bodem-en-ondergrond",
+                        "id": "ontology:bodemenondergrond",
                         "type": "owl:Ontology",
-                        "label": "bodem-en-ondergrond",
+                        "label": "bodemenondergrond",
                         "seeAlso": [
                             "CoverageCore:CV_CurveValuePair.geometry",
                             "CoverageCore:CV_GeometryValuePair.value",
@@ -628,34 +660,40 @@
                             "sosa:Observation",
                             "sosa:observedProperty",
                             "sosa:result"
-                        ]
+                        ],
+                        "sameAs": {
+                            "id": "ns:bodemenondergrond",
+                            "type": "owl:Ontology",
+                            "label": "bodemenondergrond",
+                            "sameAs": "ontology:bodemenondergrond"
+                        }
                     },
                     "label": "Meetreekswaarde"
                 },
-                "isDefinedBy": "ns:bodem-en-ondergrond",
+                "isDefinedBy": "ontology:bodemenondergrond",
                 "label": "meetpunt",
                 "range": "rdfs:Resource"
             }
         },
         {
-            "id": "concept:meetpuntOndergrens",
+            "id": "bodemenondergrond:meetpuntOndergrens",
             "type": "rdf:Property",
             "comment": "Ondergrens van een klasse van waarden van meetpunten.",
-            "domain": "concept:Fractiemetingwaarde",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "domain": "bodemenondergrond:Fractiemetingwaarde",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "meetpuntOndergrens",
             "subPropertyOf": {
-                "id": "concept:meetpunt",
+                "id": "bodemenondergrond:meetpunt",
                 "type": "rdf:Property",
                 "comment": "Waarde van het meetpunt.",
                 "domain": {
-                    "id": "concept:Meetreekswaarde",
+                    "id": "bodemenondergrond:Meetreekswaarde",
                     "type": "rdfs:Class",
                     "comment": "Een waardepaar in een Meetreeks met een waarde voor de het geobserveerdKenmerk en een waarde voor de parameter.",
                     "isDefinedBy": {
-                        "id": "ns:bodem-en-ondergrond",
+                        "id": "ontology:bodemenondergrond",
                         "type": "owl:Ontology",
-                        "label": "bodem-en-ondergrond",
+                        "label": "bodemenondergrond",
                         "seeAlso": [
                             "CoverageCore:CV_CurveValuePair.geometry",
                             "CoverageCore:CV_GeometryValuePair.value",
@@ -665,52 +703,58 @@
                             "sosa:Observation",
                             "sosa:observedProperty",
                             "sosa:result"
-                        ]
+                        ],
+                        "sameAs": {
+                            "id": "ns:bodemenondergrond",
+                            "type": "owl:Ontology",
+                            "label": "bodemenondergrond",
+                            "sameAs": "ontology:bodemenondergrond"
+                        }
                     },
                     "label": "Meetreekswaarde"
                 },
-                "isDefinedBy": "ns:bodem-en-ondergrond",
+                "isDefinedBy": "ontology:bodemenondergrond",
                 "label": "meetpunt",
                 "range": "rdfs:Resource"
             }
         },
         {
-            "id": "concept:meetpuntparameter",
+            "id": "bodemenondergrond:meetpuntparameter",
             "type": "rdf:Property",
             "comment": "Het kenmerk in functie waarvan het geobserveerdKenmerk verandert.",
-            "domain": "concept:Meetreeks",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "domain": "bodemenondergrond:Meetreeks",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "meetpuntparameter"
         },
         {
-            "id": "concept:meetreekswaarde",
+            "id": "bodemenondergrond:meetreekswaarde",
             "type": "rdf:Property",
             "comment": [
                 "Eén waarde in het resultaat van een Meetreeks.",
                 "Waarde van een individuele meting in de Meetreeks.."
             ],
             "domain": [
-                "concept:Fractiemetingresultaat",
-                "concept:Meetreeksresultaat"
+                "bodemenondergrond:Fractiemetingresultaat",
+                "bodemenondergrond:Meetreeksresultaat"
             ],
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "Meetreekswaarde",
-            "range": "concept:Fractiemetingwaarde"
+            "range": "bodemenondergrond:Fractiemetingwaarde"
         },
         {
-            "id": "concept:meetwaarde",
+            "id": "bodemenondergrond:meetwaarde",
             "type": "rdf:Property",
             "comment": "Waarde van het geobserveerdKenmerk.",
-            "domain": "concept:Meetreekswaarde",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "domain": "bodemenondergrond:Meetreekswaarde",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "meetwaarde"
         },
         {
-            "id": "concept:waarde",
+            "id": "bodemenondergrond:waarde",
             "type": "rdf:Property",
             "comment": "Verwijzing naar een record dat de laag beschrijft.",
-            "domain": "concept:Laag",
-            "isDefinedBy": "ns:bodem-en-ondergrond",
+            "domain": "bodemenondergrond:Laag",
+            "isDefinedBy": "ontology:bodemenondergrond",
             "label": "waarde"
         }
     ]

@@ -58,7 +58,7 @@ ons:ontologie
     sh:name          "Ontologie bodem-en-ondergrond nodeshape."@en ;
     sh:description   "Vocabularium "@en ;
     rdfs:isDefinedBy beo_ont:ontology-ap-constraints, beo_voc:ontology-ap-constraints ;
-    sh:property      omg_ps:label, omg_ps:seeAlso, omg_ps:rdf_type;
+    sh:property      omg_ps:label, omg_ps:seeAlso, omg_ps:rdf_type, omg_ps:sameAs;
     sh:closed true ;
     sh:targetClass   owl:Ontology .
 
@@ -94,6 +94,14 @@ omg_ps:rdf_type
     sh:nodeKind      sh:IRI ;
     sh:path          rdf:type .
 
+omg_ps:sameAs
+    a                sh:PropertyShape ;
+    rdfs:label       "zie ook"@en ;
+    sh:name          "zie ook"@en ;
+    sh:description   "Kijk eens naar de andere eigenschappen en concepten."@en ;
+    rdfs:isDefinedBy beo_ont:ontology-ap-constraints, beo_voc:ontology-ap-constraints ;
+    sh:nodeKind      sh:IRI ;
+    sh:path          owl:sameAs .
 
 
 
