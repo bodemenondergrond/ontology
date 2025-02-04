@@ -356,7 +356,7 @@
             "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
             "@type": "@id"
         },
-        "concept": "https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#",
+        "concept": "https://data.bodemenondergrond.vlaanderen.be/ns/bodemenondergrond#",
         "access_right": "http://publications.europa.eu/resource/authority/access-right/",
         "adms": "http://www.w3.org/ns/adms#",
         "assettype": "http://purl.org/adms/assettype/",
@@ -413,11 +413,11 @@
         "CoverageCore": "http://def.isotc211.org/iso19123/2005/CoverageCore#",
         "Observation": "http://def.isotc211.org/iso19156/2011/Observation#",
         "SamplingPoint": "http://def.isotc211.org/iso19156/2011/SamplingPoint#",
-        "bodem-en-ondergrond": "https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#",
+        "bodem-en-ondergrond": "https://data.bodemenondergrond.vlaanderen.be/ns/bodemenondergrond#",
         "ns": "https://data.bodemenondergrond.vlaanderen.be/ns/",
         "ssn": "http://www.w3.org/ns/ssn/",
         "sosa": "http://www.w3.org/ns/sosa/",
-        "@base": "https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#"
+        "@base": "https://data.bodemenondergrond.vlaanderen.be/ns/bodemenondergrond#"
     },
     "graph": [
         {

@@ -1,4 +1,4 @@
-@prefix concept: <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix concept: <https://data.bodemenondergrond.vlaanderen.be/ns/bodemenondergrond#>.
 @prefix access_right: <http://publications.europa.eu/resource/authority/access-right/>.
 @prefix adms: <http://www.w3.org/ns/adms#>.
 @prefix assettype: <http://purl.org/adms/assettype/>.
@@ -55,7 +55,7 @@
 @prefix CoverageCore: <http://def.isotc211.org/iso19123/2005/CoverageCore#>.
 @prefix Observation: <http://def.isotc211.org/iso19156/2011/Observation#>.
 @prefix SamplingPoint: <http://def.isotc211.org/iso19156/2011/SamplingPoint#>.
-@prefix bodem-en-ondergrond: <https://data.bodemenondergrond.vlaanderen.be/ns/bodem-en-ondergrond#>.
+@prefix bodem-en-ondergrond: <https://data.bodemenondergrond.vlaanderen.be/ns/bodemenondergrond#>.
 @prefix ns: <https://data.bodemenondergrond.vlaanderen.be/ns/>.
 @prefix ssn: <http://www.w3.org/ns/ssn/>.
 @prefix sosa: <http://www.w3.org/ns/sosa/>.
