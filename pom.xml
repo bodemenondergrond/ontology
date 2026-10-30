@@ -16,7 +16,7 @@
 
     <properties>
         <frontend-maven-plugin.version>1.15.1</frontend-maven-plugin.version>
-        <node.version>v24.11.1</node.version>
+        <node.version>v24.22.1</node.version>
     </properties>
     
     <scm>
